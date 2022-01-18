@@ -4,144 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-   
-    <title>Document</title>
-</head>
-<style>
-     *{
+    <title>css form</title>
+    <style>
+        .container{
             box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            height: 200vh;
-        }
-  
-    header{
-        width: 100%;
-        background-color: #1E90FF;
-        position:fixed ;
-        z-index: 1;
-    }
-    ul.list{
-        list-style-type: none;
-        padding: 0;
-        float: right;
-        margin-top: 10;
-        
-    }
-    ul li{
-        display: inline;
-        margin-left: 10px;
+            width: 70%;
+            height: 80vh;
+            margin: 10px auto;
+            font-weight: 700;
+            font-size: 22px;
+            background-color: red;
+            overflow: hidden;
+            border-radius:55px;
+            
+            
+            background-image: radial-gradient(circle at top right,#9849ff,firebrick);
 
-        
-    }
-    ul li a{
-        text-decoration: none;
-        padding: 5px 10px;
-        color: #fff;
+        }
+        .wrapper{
+            width: 50%;
+            margin-left:3em ;
+            margin-top: 1em;
+            border-radius: 5px;
+            padding-top: 20px;
+            overflow: hidden;
+            
+            
+        }
+        h1{
+            margin-left: 3em;
+            margin-bottom: -20px;
 
+        }
+        input{
+            width: 100%;
+            padding: 10px 15px;
+            color: black;
+            margin-top: 0.5em;
+            border: none;
+            border-bottom: 2px solid;
+        }
        
-    }
-    .topbar{
-        height: 70px;
-    
-    }
-    .logo{
-        display: inline;
-        margin-left: 30px;
-    }
-    .logo .lit{
-        display: inline-block;
+        .btn{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            
+            
+        }
+        button{
+            width: 100%;
+            display: inline;
+            padding: 10px 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 400;
+            background-color: red;
+            
+            background-image: radial-gradient(circle at top left,green,black);
+            border: none;
+            outline: none;
+        }
+       
+        button:hover{
+            opacity: 0.6;
+            transition: ease-in-out 2s;
 
-    }
-    .list li .btn{
-        background-color:gray ;
-        width: 100px;
-        color:#fff;
-        border: none;
-        border-radius: 2 solid black;
-        padding: 5px 10px;   
-        outline: none;
-    }
-    ul li a:hover{
-        background-color: green;
-        text-decoration: none;
-
-    }
-    ul li .btn:hover{
-        background-color: green;
-    }
-    .section{
-        background-image: url("../image/img_mountains.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        height: 100vh;
+        }
+        @media screen and (max-width: 480px) {
+            body {
+                background-color: black;
         
+         }
+         h2{
+             font-size: 18px;
+             margin-left: 7px;
+             margin-bottom: 1em;
+         }
+         .container{
+             width: 90%;
+             margin:5px auto;
+             overflow: hidden;
+             background-color: darkolivegreen;
+             border-radius: 1px;
+         }
+         .wrapper{
+             width: 80%;
+         }
+         input,button{
+             width: 100%;
+         }
         
-    
-    }
-    .text1{
-        padding-top: 0.7em;
-        line-height: 1.5em;
-        text-align:center;
-        font-size: 80px;
-        font-weight: bolder;
-    
 
-    }
-    .text2{
-        line-height: 1.5em;
-        text-align:center;
-        font-size: 30px;
-        font-weight: bolder;
-    }
-    .section .but{
-        width: 100%;
+        }
+        
 
-    }
-    .btn2{
-        background-color:red;
-        width: 200px;
-        color:#fff;
-        border: none;
-        border-radius: 2 solid black;
-        padding: 15px 10px;   
-        outline:none;  
-    }
-    .btn2:hover{  
-        opacity:0.5;
-    }
-</style>
+    </style>
+</head>
 <body>
-    <header>
-        <div class="topbar">
-            <div class="logo">
-               <img src="../image/addcart.jpg" width="100px"> 
+    <div class="container">
+        <div class="wrapper">
+
+            <form action="">
+                <h2>Form Registration</h2>
+
+                <label for="user">Full name :</label>
+                <input type="text" id="user" required placeholder="First name, last name"><br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required><br>
+                
+                <label for="pw">Password :</label>
+                <input type="password" id="pw" required><br>
+                <!-- <input type="submit" value=" Submit">
+                <input type="reset" value="Reset"> -->
+                
+            </form>
+            <div class="btn">
+                <button>Submit</button>
+                <button>Reset</button>
+
             </div>
-            <div class="lit">
-                <ul class="list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li> 
-                    <li><a href="#">Visit Us</a></li>
-                    <li><button class="btn">Click here</button></li>
-                </ul>
-            </div>
-            
-            
             
         </div>
-    </header>
-    <div class="section">
-        <h1 class="text1"> Html Free Website Templates Free Download</h1>
-        <p class="text2">A large program was prepared this year for children: master classes, games, 
-            children's art fair.</p>
-        <div class="but"><button class="btn2">Click here</button></div>
- 
+
+
         
+            
+        </div>
     </div>
 </body>
 </html>
